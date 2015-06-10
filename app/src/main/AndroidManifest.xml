@@ -28,7 +28,7 @@
         <activity
             android:name=".SplashScreen"
 
-            android:label="@string/title_activity_splash_screen">
+            android:label="Four Screen Tap">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
