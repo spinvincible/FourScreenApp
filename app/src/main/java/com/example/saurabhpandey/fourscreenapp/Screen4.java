@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 
 public class Screen4 extends ActionBarActivity {
@@ -39,19 +40,23 @@ public class Screen4 extends ActionBarActivity {
     }
 
     public void Button41(View view) {
-        Intent iinent= new Intent(Screen4.this,MainActivity.class);
+        Intent iinent = new Intent(Screen4.this, MainActivity.class);
         startActivity(iinent);
     }
 
-    public void Button42(View view) {Intent iinent= new Intent(Screen4.this,Screen2.class);
+    public void Button42(View view) {
+        Intent iinent = new Intent(Screen4.this, Screen2.class);
         startActivity(iinent);
     }
 
-    public void Button43(View view) {Intent iinent= new Intent(Screen4.this,Screen3.class);
+    public void Button43(View view) {
+        Intent iinent = new Intent(Screen4.this, Screen3.class);
         startActivity(iinent);
     }
 
-    public void Button44(View view) {Intent iinent= new Intent(Screen4.this,Screen4.class);
+    public void Button44(View view) {
+        Intent iinent = new Intent(Screen4.this, Screen4.class);
         startActivity(iinent);
+        Toast.makeText(this, "You are on the same Screen", Toast.LENGTH_LONG).show();
     }
 }

@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -13,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
 
     }
@@ -41,27 +41,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
     public void Button14(View view) {
-        Intent intent14=new Intent(MainActivity.this,Screen4.class);
+        Intent intent14 = new Intent(MainActivity.this, Screen4.class);
         startActivity(intent14);
     }
 
     public void Button13(View view) {
-        Intent intent=new Intent(MainActivity.this,Screen3.class);
+        Intent intent = new Intent(MainActivity.this, Screen3.class);
         startActivity(intent);
     }
 
     public void Button12(View view) {
-        Intent intent=new Intent(MainActivity.this,Screen2.class);
+        Intent intent = new Intent(MainActivity.this, Screen2.class);
         startActivity(intent);
     }
 
     public void Button11(View view) {
 
-        Intent intent=new Intent(MainActivity.this,MainActivity.class);
+        Intent intent = new Intent(MainActivity.this, MainActivity.class);
         startActivity(intent);
+        Toast.makeText(this, "You are on the same Screen", Toast.LENGTH_LONG).show();
     }
 
 

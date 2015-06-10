@@ -1,9 +1,12 @@
 package com.example.saurabhpandey.fourscreenapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 
 public class Screen3 extends ActionBarActivity {
@@ -34,5 +37,27 @@ public class Screen3 extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void Button31(View view) {
+        Intent intent = new Intent(Screen3.this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void Button32(View view) {
+        Intent intent = new Intent(Screen3.this, Screen2.class);
+        startActivity(intent);
+    }
+
+    public void Button33(View view) {
+        Intent intent = new Intent(Screen3.this, Screen3.class);
+        startActivity(intent);
+        Toast.makeText(this, "You are on the same Screen", Toast.LENGTH_LONG).show();
+    }
+
+    public void Button34(View view) {
+
+        Intent intent = new Intent(Screen3.this, Screen4.class);
+        startActivity(intent);
     }
 }
