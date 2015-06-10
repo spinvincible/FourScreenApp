@@ -103,13 +103,26 @@ public class MainActivity extends AppCompatActivity {
 
     public void Button11(View view) {
 
-        Intent intent = new Intent(MainActivity.this, MainActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);  // To not save the last activity in the app
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-        startActivity(intent);
+//        Intent intent = new Intent(MainActivity.this, MainActivity.class);
+//        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);  // To not save the last activity in the app
+//        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+//        startActivity(intent);
         Toast.makeText(this, "You are on the same Screen", Toast.LENGTH_SHORT).show();
     }
 
 
+
+
+    public void image11(View view) {
+        Intent whatsappIntent = new Intent(Intent.ACTION_SEND);
+        whatsappIntent.setType("text/plain");
+        whatsappIntent.setPackage("com.whatsapp");
+        whatsappIntent.putExtra(Intent.EXTRA_TEXT, "Sending this message via share in my app");
+        try {
+            this.startActivity(whatsappIntent);
+        } catch (android.content.ActivityNotFoundException ex) {
+            Toast.makeText(this, "Whatsapp not Installed Please Install and try again", Toast.LENGTH_LONG).show();
+        }
+    }
 }

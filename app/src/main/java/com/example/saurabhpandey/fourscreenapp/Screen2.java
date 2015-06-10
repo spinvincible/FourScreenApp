@@ -63,11 +63,11 @@ public class Screen2 extends ActionBarActivity {
     }
 
     public void Button22(View view) {
-        Intent intent = new Intent(Screen2.this, Screen2.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);  // To not save the last activity in the app
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-        startActivity(intent);
+//        Intent intent = new Intent(Screen2.this, Screen2.class);
+//        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);  // To not save the last activity in the app
+//        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+//        startActivity(intent);
 
         Toast.makeText(this, "You are on the same Screen", Toast.LENGTH_SHORT).show();
     }
