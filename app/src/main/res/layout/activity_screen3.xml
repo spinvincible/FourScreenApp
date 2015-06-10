@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.saurabhpandey.fourscreenapp.Screen3">
+
+    <Button
+        android:id="@+id/buttonS31"
+        style="@style/btnStyleShakespeare"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+
+        android:layout_marginTop="59dp"
+        android:onClick="Button31"
+        android:text="Screen 1" />
+
+    <Button
+        android:id="@+id/buttonS32"
+        style="@style/btnStyleShakespeare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/buttonS31"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:onClick="Button32"
+        android:text="Screen 2" />
+
+    <Button
+        android:id="@+id/buttonS33"
+        style="@style/btnStyleShakespeare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/buttonS32"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:onClick="Button33"
+        android:text="Screen 3" />
+
+    <Button
+        android:id="@+id/buttonS34"
+
+        style="@style/btnStyleShakespeare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonS33"
+        android:layout_alignStart="@+id/buttonS33"
+        android:layout_below="@+id/buttonS33"
+
+        android:layout_marginBottom="10dp"
+        android:onClick="Button34"
+        android:text="Screen 4" />
+
+    <TextView
+        android:id="@+id/textViewS3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonS34"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        android:text="Screen 3"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
