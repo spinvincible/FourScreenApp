@@ -55,23 +55,35 @@ public class Screen4 extends ActionBarActivity {
     }
 
     public void Button41(View view) {
-        Intent iinent = new Intent(Screen4.this, MainActivity.class);
-        startActivity(iinent);
+        Intent intent = new Intent(Screen4.this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);  // To not save the last activity in the app
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        startActivity(intent);
     }
 
     public void Button42(View view) {
-        Intent iinent = new Intent(Screen4.this, Screen2.class);
-        startActivity(iinent);
+        Intent intent = new Intent(Screen4.this, Screen2.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);  // To not save the last activity in the app
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        startActivity(intent);
     }
 
     public void Button43(View view) {
-        Intent iinent = new Intent(Screen4.this, Screen3.class);
-        startActivity(iinent);
+        Intent intent = new Intent(Screen4.this, Screen3.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);  // To not save the last activity in the app
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        startActivity(intent);
     }
 
     public void Button44(View view) {
-        Intent iinent = new Intent(Screen4.this, Screen4.class);
-        startActivity(iinent);
+        Intent intent = new Intent(Screen4.this, Screen4.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);  // To not save the last activity in the app
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        startActivity(intent);
         Toast.makeText(this, "You are on the same Screen", Toast.LENGTH_SHORT).show();
     }
 }

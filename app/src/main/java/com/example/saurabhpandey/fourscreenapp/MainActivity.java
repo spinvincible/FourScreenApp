@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -26,6 +27,23 @@ public class MainActivity extends AppCompatActivity {
                         MainActivity.super.onBackPressed();
                     }
                 }).create().show();
+//    private Boolean exit = false;
+//        To exit the app on second back press
+
+//        if (exit) {
+//            finish(); // finish activity
+//        } else {
+//            Toast.makeText(this, "Press Back again to Exit.",
+//                    Toast.LENGTH_SHORT).show();
+//            exit = true;
+//            new Handler().postDelayed(new Runnable() {
+//                @Override
+//                public void run() {
+//                    exit = false;
+//                }
+//            }, 3 * 1000);
+//
+//        }
     }
 
     @Override
@@ -60,23 +78,35 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void Button14(View view) {
-        Intent intent14 = new Intent(MainActivity.this, Screen4.class);
-        startActivity(intent14);
+        Intent intent = new Intent(MainActivity.this, Screen4.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);  // To not save the last activity in the app
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        startActivity(intent);
     }
 
     public void Button13(View view) {
         Intent intent = new Intent(MainActivity.this, Screen3.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);  // To not save the last activity in the app
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         startActivity(intent);
     }
 
     public void Button12(View view) {
         Intent intent = new Intent(MainActivity.this, Screen2.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);  // To not save the last activity in the app
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         startActivity(intent);
     }
 
     public void Button11(View view) {
 
         Intent intent = new Intent(MainActivity.this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);  // To not save the last activity in the app
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         startActivity(intent);
         Toast.makeText(this, "You are on the same Screen", Toast.LENGTH_SHORT).show();
     }
