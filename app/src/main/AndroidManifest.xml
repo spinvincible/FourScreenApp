@@ -13,18 +13,28 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
             android:name=".Screen2"
-            android:label="@string/title_activity_screen2"></activity>
+            android:label="@string/title_activity_screen2" />
         <activity
             android:name=".Screen3"
-            android:label="@string/title_activity_screen3"></activity>
+            android:label="@string/title_activity_screen3" />
         <activity
             android:name=".Screen4"
-            android:label="@string/title_activity_screen4"></activity>
+            android:label="@string/title_activity_screen4" />
+        <activity
+            android:name=".SplashScreen"
+
+            android:label="@string/title_activity_splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

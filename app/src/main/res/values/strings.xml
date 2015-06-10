@@ -6,4 +6,8 @@
     <string name="title_activity_screen2">Screen2</string>
     <string name="title_activity_screen3">Screen3</string>
     <string name="title_activity_screen4">Screen4</string>
+
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

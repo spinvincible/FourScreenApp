@@ -52,7 +52,7 @@ public class Screen3 extends ActionBarActivity {
     public void Button33(View view) {
         Intent intent = new Intent(Screen3.this, Screen3.class);
         startActivity(intent);
-        Toast.makeText(this, "You are on the same Screen", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "You are on the same Screen", Toast.LENGTH_SHORT).show();
     }
 
     public void Button34(View view) {

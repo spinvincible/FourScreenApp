@@ -48,7 +48,7 @@ public class Screen2 extends ActionBarActivity {
         Intent intent = new Intent(Screen2.this, Screen2.class);
         startActivity(intent);
 
-        Toast.makeText(this, "You are on the same Screen", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "You are on the same Screen", Toast.LENGTH_SHORT).show();
     }
 
     public void Button23(View view) {

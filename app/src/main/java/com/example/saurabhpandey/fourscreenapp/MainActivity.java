@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(MainActivity.this, MainActivity.class);
         startActivity(intent);
-        Toast.makeText(this, "You are on the same Screen", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "You are on the same Screen", Toast.LENGTH_SHORT).show();
     }
 
 
